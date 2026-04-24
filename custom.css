@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.title {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+
+}
+
+.under-title {
+  font-family: "Quattrocento Sans", sans-serif;
+  
+}
+
+.fenetre {
+  position: absolute;
+  align-items: center ;
+  display: flex;
+  flex-direction: column;
+  font-size: 0,5rem;
+  gap: 32px;
+  width: 10%;
+  height: 100%;
+  left: 0%;
+  z-index: 1;
+}
+
+
+
+

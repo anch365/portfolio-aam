@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth bg-black/95 text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio AAM</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./icones/favicon_io/favicon.ico" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body
+    class="flex flex-col px-8 py-32 gap-20 text-xl/8 under-title md:gap-28 lg:px-20 xl:px-32 xl:gap-12 2xl:px-54"
+  >
+    <header
+      class="fixed rounded-4xl top-4 left-4 right-4 flex flex-row justify-between p-4 bg-black/45 md:left-20 md:right-20 lg:right-42 lg:left-42"
+    >
+      <!-- LE LOGO DU PORTFOLIO -->
+      <img
+        src="./icones/logo-header.png"
+        alt="logo du portfolio"
+        class="h-9 xl:h-12"
+      />
+
+      <!-- MENU BURGER -->
+      <div class="lg:hidden">
+        <div
+          id="fond-sombre"
+          class="fixed top-0 left-0 right-0 bottom-0 bg-gray-900/30 hidden"
+        ></div>
+
+        <div
+          id="fenetre"
+          class="hidden fixed flex-col gap-10 bg-gray-800 left-44 top-16 right-8 bottom-95 rounded-2xl py-8 items-center md:right-25"
+        >
+          <a href="#home">Home</a>
+          <a href="#aboutMe">About me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <img
+          id="menuB"
+          src="./icones/menu-burger.png"
+          alt="Menu burger"
+          class="h-9"
+        />
+      </div>
+
+      <!-- MENU DESKTOP -->
+      <div class="hidden fixed lg:flex text-white right-48 flex-row lg:gap-8">
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="home" class="flex flex-col items-center gap-8 lg:gap-20">
+      <!-- Home -->
+      <div
+        class="flex flex-col gap-8 justify-center items-center lg:flex-row lg:gap-12"
+      >
+        <div>
+          <img
+            src="./Assets/home-tof.png"
+            alt="photo de profile"
+            class="items-center rounded-full h-62 w-62 outline-3 outline-pink-400 md:h-100 md:w-100 lg:h-100 lg:w-200 xl:h-100 xl:w-200 2xl:h-120 2xl:w-140"
+          />
+        </div>
+
+        <div>
+          <p>Bonjour 🥰, bienvenue sur mon portfolio</p>
+
+          <h1 class="pt-4 text-4xl">
+            Je suis
+            <span
+              class="inline-block bg-linear-to-r from-purple-300 to-pink-400 bg-clip-text text-transparent title"
+              >Anchoura Abdou mchinda</span
+            >
+            Développeur Web & Web mobile
+          </h1>
+
+          <p class="pt-5">
+            Développeuse débutante en formation et passionnée par le
+            développement web. Le respect et la durée d'un travail demandé font
+            partie de moi
+          </p>
+        </div>
+      </div>
+      <!-- BOUTONS -->
+      <nav class="flex flex-col gap-4 justify-center md:flex-row">
+        <a href="#projects"
+          ><button
+            class="rounded-full bg-pink-400 text-black px-6 py-2 hover:bg-pink-400/74 md:px-20 lg:px-17"
+          >
+            Voir mes projets
+          </button>
+        </a>
+
+        <a href="#contact">
+          <button
+            class="rounded-full outline-2 outline-purple-400 text-purple-400 px-9 py-2 hover:bg-gray-600/35 md:px-20"
+          >
+            Me contacter
+          </button>
+        </a>
+      </nav>
+
+      <!-- ABOUT ME -->
+      <section id="aboutMe" class="flex flex-col gap-6 md:gap-12">
+        <h2
+          class="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent title text-center text-4xl"
+        >
+          About me
+
+          <div
+            class="flex flex-row items-center gap-2 mt-1 w-full justify-center"
+          >
+            <div
+              class="h-0.5 w-24 bg-linear-to-r from-transparent to-pink-400 bg-clip-tex"
+            ></div>
+            <div class="w-3 h-3 bg-pink-400 rounded-full"></div>
+            <div
+              class="h-0.5 w-24 bg-linear-to-l from-transparent to-pink-400 bg-clip-tex"
+            ></div>
+          </div>
+        </h2>
+        <div class="flex flex-col gap-6 md:flex-row md:gap-12 xl:gap-20">
+          <div class="">
+            <img
+              src="./Assets/Main-tof.png"
+              alt="photo dans la section à propos de moi"
+              class="rounded-4xl outline-1 outline-pink-400 md:h-120 md:w-240 lg:w-245 lg:h-140 xl:w-265 xl:h-160 2xl:w-245 2xl:h-180"
+            />
+          </div>
+
+          <div class="flex flex-col gap-6 md:gap-4 lg:pt-28">
+            <h3 class="under-title text-3xl font-semibold">
+              Une développeuse passionnée par le code
+            </h3>
+
+            <p>
+              Actuellement en formation Bac+2 en développement web à Garage404,
+              j'ai eu l'opportunité d'y construire et développer l'ensemble de
+              mes compétences techniques.
+            </p>
+
+            <p>
+              Passionnée par le numérique depuis toujours, j'ai découvert le
+              développement comme un moyen concret de transformer cette
+              curiosité en création.
+            </p>
+
+            <p>
+              Je cherche aujourd'hui à progresser continuellement et à concevoir
+              des projets propres, utiles et bien pensés.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPETENCE -->
+      <section id="skills" class="flex flex-col gap-8 justify-center md:gap-18">
+        <h2
+          class="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent title text-center text-4xl"
+        >
+          Skills
+
+          <div
+            class="flex flex-row items-center gap-2 mt-1 w-full justify-center"
+          >
+            <div
+              class="h-0.5 w-24 bg-linear-to-r from-transparent to-pink-400 bg-clip-tex"
+            ></div>
+            <div class="w-3 h-3 bg-pink-400 rounded-full"></div>
+            <div
+              class="h-0.5 w-24 bg-linear-to-l from-transparent to-pink-400 bg-clip-tex"
+            ></div>
+          </div>
+        </h2>
+
+        <p class="text-gray-400/90 text-center">
+          Les technologies que je maîtrise pour créer des expériences web
+          exceptionnelles
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-8 title">
+          <!-- LOGO HTML -->
+          <div
+            class="flex flex-col items-center gap-6 hover:text-pink-300 transition-all delay-75 duration-500 ease-in-out hover:translate-y-1 hover:scale-110"
+          >
+            <img
+              src="./icones/html5-svgrepo-com.svg"
+              alt="icone html"
+              class="h-24 outline-2 hover:outline-pink-400 outline-pink-300/50 rounded-full p-4 hover:bg-gray-400/5 md:h-32"
+            />
+            <p>HTML</p>
+          </div>
+
+          <!-- LOGO CSS -->
+          <div
+            class="flex flex-col items-center gap-6 hover:text-pink-300 transition-all delay-75 duration-500 ease-in-out hover:translate-y-1 hover:scale-110"
+          >
+            <img
+              src="./icones/css3-svgrepo-com.svg"
+              alt="icone css"
+              class="h-24 outline-2 outline-pink-300/50 rounded-full p-4 hover:bg-gray-400/5 hover:outline-pink-400 md:h-32"
+            />
+
+            <p>CSS</p>
+          </div>
+
+          <!-- LOGO JavaScript -->
+          <div
+            class="flex flex-col items-center gap-6 hover:text-pink-300 transition-all delay-75 duration-500 ease-in-out hover:translate-y-1 hover:scale-110"
+          >
+            <img
+              src="./icones/vecteezy_javascript-logo-png-javascript-icon-transparent-png_27127463.png"
+              alt="icone javascript"
+              class="h-24 outline-2 outline-pink-300/50 rounded-full p-4 hover:bg-gray-400/5 hover:outline-pink-400 md:h-32"
+            />
+
+            <p>JavaScript</p>
+          </div>
+
+          <!-- LOGO Git -->
+          <div
+            class="flex flex-col items-center gap-6 hover:text-pink-300 transition-all delay-75 duration-500 ease-in-out hover:translate-y-1 hover:scale-110"
+          >
+            <img
+              src="./icones/git-svgrepo-com.svg"
+              alt="icone git"
+              class="h-24 outline-2 outline-pink-300/50 rounded-full p-4 hover:bg-gray-400/5 hover:outline-pink-400 md:h-32"
+            />
+
+            <p>Git</p>
+          </div>
+
+          <!-- LOGO Tailwind CSS -->
+          <div
+            class="flex flex-col items-center gap-6 hover:text-pink-300 transition-all delay-75 duration-500 ease-in-out hover:translate-y-1 hover:scale-110"
+          >
+            <img
+              src="./icones/tailwind-svgrepo-com.svg"
+              alt="icone git"
+              class="h-24 outline-2 outline-pink-300/50 rounded-full p-4 hover:bg-gray-400/5 hover:outline-pink-400 md:h-32"
+            />
+
+            <p>Tailwind CSS</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LES PROJETS -->
+      <section
+        id="projects"
+        class="flex flex-col gap-8 items-center justify-center"
+      >
+        <h2
+          class="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent title text-center text-4xl"
+        >
+          Projets
+
+          <div
+            class="flex flex-row items-center gap-2 mt-1 w-full justify-center"
+          >
+            <div
+              class="h-0.5 w-24 bg-linear-to-r from-transparent to-pink-400 bg-clip-tex"
+            ></div>
+            <div class="w-3 h-3 bg-pink-400 rounded-full"></div>
+            <div
+              class="h-0.5 w-24 bg-linear-to-l from-transparent to-purple-400 bg-clip-tex"
+            ></div>
+          </div>
+        </h2>
+
+        <p class="text-gray-400/90 text-center">
+          Découvrez une sélection de mes projets récents
+        </p>
+
+        <div
+          class="flex flex-col gap-12 md:w-6/7 lg:w-4/5 xl:flex-row xl:w-auto"
+        >
+          <!-- Web Retro -->
+          <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              src="./Assets/The Bright Future - Google Chrome 2026-04-24 14-46-50.mp4"
+              class="w-full h-50 object-cover"
+            ></video>
+
+            <div>
+              <div class="px-6 py-4">
+                <div class="title">Web Retro</div>
+
+                <p class="text-gray-300/90">
+                  WebRetro est une intégration web responsive réalisée avec
+                  Tailwind CSS. Ce projet met en avant une interface moderne. Il
+                  illustre mes compétences en HTML, Tailwind CSS et responsive
+                  design
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex flex-row gap-4 px-4 py-12">
+                <a
+                  href="https://web-retro.vercel.app/"
+                  target="_blank"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full px-12 py-4 text-black"
+                >
+                  <p>Visiter le projet</p>
+                </a>
+
+                <div>
+                  <button class="h-12">
+                    <img
+                      src="./icones/icons8-github-64.png"
+                      alt="logo de github pour voir le projet sur ce site"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mountain King -->
+          <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              src="./Assets/Mountain-King.vidéo - Trim.mp4"
+              class="w-full h-50 object-cover"
+            ></video>
+
+            <div class="px-6 py-4">
+              <div class="title">Web Retro</div>
+
+              <p class="text-gray-300/90">
+                WebRetro est une intégration web responsive réalisée avec
+                Tailwind CSS. Ce projet met en avant une interface moderne. Il
+                illustre mes compétences en HTML, Tailwind CSS et responsive
+                design
+              </p>
+            </div>
+
+            <div class="flex flex-row gap-4 px-4 py-12">
+              <a
+                href="https://mountain-king.vercel.app/"
+                target="_blank"
+                class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full px-12 py-4 text-black"
+              >
+                <p>Visiter le projet</p>
+              </a>
+
+              <div>
+                <button class="h-12">
+                  <img
+                    src="./icones/icons8-github-64.png"
+                    alt="logo de github pour voir le projet sur ce site"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- DRUM PAD -->
+          <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              src="./Assets/Drum Pad - Google Chrome 2026-04-23 11-57-26.mp4"
+              class="w-full h-50 object-cover"
+            ></video>
+
+            <div class="px-6 py-4">
+              <div class="title">Web Retro</div>
+
+              <p class="text-gray-300/90">
+                WebRetro est une intégration web responsive réalisée avec
+                Tailwind CSS. Ce projet met en avant une interface moderne. Il
+                illustre mes compétences en HTML, Tailwind CSS et responsive
+                design
+              </p>
+            </div>
+
+            <div class="flex flex-row gap-4 px-4 py-12">
+              <button
+                class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full px-12 text-black"
+              >
+                Visiter le projet
+              </button>
+
+              <div>
+                <button class="h-12">
+                  <img
+                    src="./icones/icons8-github-64.png"
+                    alt="logo de github pour voir le projet sur ce site"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="contact"
+      class="flex flex-col gap-12 text-center text-gray-400/90"
+    >
+      <h2
+        class="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent title text-center text-4xl"
+      >
+        Contact
+
+        <div
+          class="flex flex-row items-center gap-2 mt-1 w-full justify-center"
+        >
+          <div
+            class="h-0.5 w-24 bg-linear-to-r from-transparent to-pink-400 bg-clip-tex"
+          ></div>
+          <div class="w-3 h-3 bg-pink-400 rounded-full"></div>
+          <div
+            class="h-0.5 w-24 bg-linear-to-l from-transparent to-purple-400 bg-clip-tex"
+          ></div>
+        </div>
+      </h2>
+      <p>N'hésitez pas à me contacter ☺️​</p>
+
+      <nav class="flex flex-wrap gap-12 justify-center">
+        <div class="flex flex-col gap-8 hover:text-gray-100">
+          <img
+            src="./icones/linkedin-svgrepo-com (1).svg"
+            alt="Logo de contact sur Linkedin"
+            class="h-20 outline-3 rounded-full outline-gray-400/45 hover:outline-blue-500 ease-in-out delay-75 transition hover:scale-110"
+          />
+
+          <p>LinkedIn</p>
+        </div>
+
+        <div class="hover:text-gray-100">
+          <a
+            href="https://github.com/dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-col gap-8"
+          >
+            <img
+              src="./icones/github-alt-svgrepo-com.svg"
+              alt="Logo de contact sur github"
+              class="h-20 outline-3 rounded-full outline-gray-400/45 hover:outline-gray-200 ease-in-out delay-75 transition hover:scale-110"
+            />
+
+            <p>GitHub</p>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-8 hover:text-gray-100">
+          <img
+            src="./icones/mail-star-svgrepo-com.svg"
+            alt="Logo de contact par Mail"
+            class="h-20 outline-3 rounded-full outline-gray-400/45 hover:outline-pink-400 ease-in-out delay-75 transition hover:scale-110"
+          />
+
+          <p>Email</p>
+        </div>
+      </nav>
+      <hr />
+      <div class="text-sm">
+        <p class="font-bold">© 2026 Portfolio. Tous droits réservés.</p>
+        <p>
+          Créé avec 💖​ et beaucoup de <span class="text-purple-400">code</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
