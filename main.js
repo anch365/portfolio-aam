@@ -2,6 +2,7 @@ let fondSombre = document.querySelector("#fond-sombre");
 let fenetre = document.querySelector("#fenetre");
 let menuBurger = document.querySelector("#menuB");
 
+
 menuBurger.addEventListener("click", handleClickMenu);
 
 function handleClickMenu() {

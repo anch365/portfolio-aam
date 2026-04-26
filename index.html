@@ -30,11 +30,14 @@
       class="fixed rounded-4xl top-4 left-4 right-4 flex flex-row justify-between p-4 bg-black/45 md:left-20 md:right-20 lg:right-42 lg:left-42"
     >
       <!-- LE LOGO DU PORTFOLIO -->
-      <img
-        src="./icones/logo-header.png"
-        alt="logo du portfolio"
-        class="h-9 xl:h-12"
-      />
+      <a href="#home">
+        <img
+          src="./icones/logo-header.webp"
+          alt="logo du portfolio"
+          class="h-9 xl:h-12"
+          loading="lazy"
+        />
+      </a>
 
       <!-- MENU BURGER -->
       <div class="lg:hidden">
@@ -45,7 +48,7 @@
 
         <div
           id="fenetre"
-          class="hidden fixed flex-col gap-10 bg-gray-800 left-44 top-16 right-8 bottom-95 rounded-2xl py-8 items-center md:right-25"
+          class="hidden fixed flex-col gap-10 bg-gray-800 left-44 top-16 right-8 rounded-2xl py-8 items-center md:right-25"
         >
           <a href="#home">Home</a>
           <a href="#aboutMe">About me</a>
@@ -63,7 +66,7 @@
       </div>
 
       <!-- MENU DESKTOP -->
-      <div class="hidden fixed lg:flex text-white right-48 flex-row lg:gap-8">
+      <div class="hidden fixed lg:flex text-gray-300/90 right-48 flex-row lg:gap-8">
         <a href="#home">Home</a>
         <a href="#aboutMe">About me</a>
         <a href="#skills">Skills</a>
@@ -79,9 +82,10 @@
       >
         <div>
           <img
-            src="./Assets/home-tof.png"
+            src="./Assets/home-tof.webp"
             alt="photo de profile"
-            class="items-center rounded-full h-62 w-62 outline-3 outline-pink-400 md:h-100 md:w-100 lg:h-100 lg:w-200 xl:h-100 xl:w-200 2xl:h-120 2xl:w-140"
+            class="items-center rounded-full h-62 w-62 outline-3 outline-pink-400 object-fill xl:h-auto xl:w-auto"
+            loading="lazy"
           />
         </div>
 
@@ -143,11 +147,12 @@
           </div>
         </h2>
         <div class="flex flex-col gap-6 md:flex-row md:gap-12 xl:gap-20">
-          <div class="">
+          <div>
             <img
-              src="./Assets/Main-tof.png"
+              src="./Assets/Main-tof.webp"
               alt="photo dans la section à propos de moi"
-              class="rounded-4xl outline-1 outline-pink-400 md:h-120 md:w-240 lg:w-245 lg:h-140 xl:w-265 xl:h-160 2xl:w-245 2xl:h-180"
+              class="rounded-4xl outline-1 outline-pink-400 md:h-110 md:w-200 lg:h-auto lg:"
+              loading="lazy"
             />
           </div>
 
@@ -159,10 +164,7 @@
             <p>
               Actuellement en formation Bac+2 en développement web à Garage404,
               j'ai eu l'opportunité d'y construire et développer l'ensemble de
-              mes compétences techniques.
-            </p>
-
-            <p>
+              mes compétences techniques. <br />
               Passionnée par le numérique depuis toujours, j'ai découvert le
               développement comme un moyen concret de transformer cette
               curiosité en création.
@@ -299,7 +301,9 @@
           class="flex flex-col gap-12 md:w-6/7 lg:w-4/5 xl:flex-row xl:w-auto"
         >
           <!-- Web Retro -->
-          <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10">
+          <div
+            class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10 lg:w-3/3"
+          >
             <video
               autoplay
               muted
@@ -322,30 +326,36 @@
               </div>
             </div>
 
-            <div>
+            <div class="lg:pt-24">
               <div class="flex flex-row gap-4 px-4 py-12">
                 <a
                   href="https://web-retro.vercel.app/"
                   target="_blank"
-                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full px-12 py-4 text-black"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:py-0 2xl:py-4"
                 >
                   <p>Visiter le projet</p>
                 </a>
 
                 <div>
-                  <button class="h-12">
+                  <a
+                    href="https://github.com/anch365/w-tailwind"
+                    target="_blank"
+                    class="h-12"
+                  >
                     <img
                       src="./icones/icons8-github-64.png"
                       alt="logo de github pour voir le projet sur ce site"
                     />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Mountain King -->
-          <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10">
+          <div
+            class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10 lg:w-3/3"
+          >
             <video
               autoplay
               muted
@@ -356,13 +366,14 @@
             ></video>
 
             <div class="px-6 py-4">
-              <div class="title">Web Retro</div>
+              <div class="title">Mountain King</div>
 
               <p class="text-gray-300/90">
-                WebRetro est une intégration web responsive réalisée avec
-                Tailwind CSS. Ce projet met en avant une interface moderne. Il
-                illustre mes compétences en HTML, Tailwind CSS et responsive
-                design
+                Mountain King est une intégration web responsive réalisée avec
+                Tailwind CSS. Ce projet met en avant un site professionnelle
+                d'un(e) jeune qui parle de son parcours. Il met en avant mes
+                compétences en HTML, Tailwind CSS, responsive design et un peu
+                de JavaScript
               </p>
             </div>
 
@@ -370,24 +381,30 @@
               <a
                 href="https://mountain-king.vercel.app/"
                 target="_blank"
-                class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full px-12 py-4 text-black"
+                class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:py-0 2xl:py-4"
               >
                 <p>Visiter le projet</p>
               </a>
 
               <div>
-                <button class="h-12">
+                <a
+                  href="https://github.com/anch365/mountain-king"
+                  target="_blank"
+                  class="h-12"
+                >
                   <img
                     src="./icones/icons8-github-64.png"
                     alt="logo de github pour voir le projet sur ce site"
                   />
-                </button>
+                </a>
               </div>
             </div>
           </div>
 
           <!-- DRUM PAD -->
-          <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10">
+          <div
+            class="rounded-2xl overflow-hidden shadow-lg bg-gray-500/10 lg:w-3/3"
+          >
             <video
               autoplay
               muted
@@ -398,30 +415,37 @@
             ></video>
 
             <div class="px-6 py-4">
-              <div class="title">Web Retro</div>
+              <div class="title">Drum Pad</div>
 
               <p class="text-gray-300/90">
-                WebRetro est une intégration web responsive réalisée avec
-                Tailwind CSS. Ce projet met en avant une interface moderne. Il
-                illustre mes compétences en HTML, Tailwind CSS et responsive
-                design
+                Ce projet m'a permis de bien mettre en évidence mes
+                connaissances en variables CSS et surtout sur JavaScript. Il a
+                comme fonction de pouvoir jouer la mélodie sans enrgistrer, mais
+                aussi enrgistrer les notes jouées pour que ça rejoue si on finit
+                l'enregistrement et qu'on clique sur le bouton play
               </p>
             </div>
 
             <div class="flex flex-row gap-4 px-4 py-12">
-              <button
-                class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full px-12 text-black"
+              <a
+                href="https://drum-pad-rho.vercel.app/"
+                target="_blank"
+                class="bg-linear-to-l from-purple-400 to-pink-400 text-black rounded-full px-8 py-4 md:px-12 xl:py-0 2xl:py-4"
               >
                 Visiter le projet
-              </button>
+              </a>
 
               <div>
-                <button class="h-12">
+                <a
+                  href="https://github.com/anch365/drumPad"
+                  target="_blank"
+                  class="h-12"
+                >
                   <img
                     src="./icones/icons8-github-64.png"
                     alt="logo de github pour voir le projet sur ce site"
                   />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -465,9 +489,8 @@
 
         <div class="hover:text-gray-100">
           <a
-            href="https://github.com/dashboard"
+            href="https://github.com/anch365"
             target="_blank"
-            rel="noopener noreferrer"
             class="flex flex-col gap-8"
           >
             <img
@@ -481,6 +504,7 @@
         </div>
 
         <div class="flex flex-col gap-8 hover:text-gray-100">
+          <a href="mailto:anchouraabdoumchinda@gmail.com" class="flex flex-col gap-8">
           <img
             src="./icones/mail-star-svgrepo-com.svg"
             alt="Logo de contact par Mail"
@@ -488,6 +512,7 @@
           />
 
           <p>Email</p>
+        </a>
         </div>
       </nav>
       <hr />
