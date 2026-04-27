@@ -24,7 +24,7 @@
   </head>
 
   <body
-    class="flex flex-col px-8 py-32 gap-20 text-xl/8 under-title md:gap-28 lg:px-20 xl:px-32 xl:gap-12 2xl:px-54"
+    class="flex flex-col px-8 py-32 gap-20 text-xl/8 under-title md:px-18 md:gap-28 lg:px-20 xl:gap-24 2xl:px-54 2xl:gap-40"
   >
     <header
       class="fixed rounded-4xl top-4 left-4 right-4 flex flex-row justify-between p-4 bg-black/45 md:left-20 md:right-20 lg:right-42 lg:left-42"
@@ -66,7 +66,9 @@
       </div>
 
       <!-- MENU DESKTOP -->
-      <div class="hidden fixed lg:flex text-gray-300/90 right-48 flex-row lg:gap-8">
+      <div
+        class="hidden fixed text-gray-300/90 right-48 flex-row lg:flex lg:gap-8"
+      >
         <a href="#home">Home</a>
         <a href="#aboutMe">About me</a>
         <a href="#skills">Skills</a>
@@ -75,24 +77,24 @@
       </div>
     </header>
 
-    <main id="home" class="flex flex-col items-center gap-8 lg:gap-20">
+    <main id="home" class="flex flex-col items-center gap-28 md:gap-24 lg:gap-20">
       <!-- Home -->
       <div
-        class="flex flex-col gap-8 justify-center items-center lg:flex-row lg:gap-12"
+        class="flex flex-col gap-8 justify-center items-center lg:flex-row lg:gap-8"
       >
         <div>
           <img
             src="./Assets/home-tof.webp"
             alt="photo de profile"
-            class="items-center rounded-full h-62 w-62 outline-3 outline-pink-400 object-fill xl:h-auto xl:w-auto"
+            class="items-center rounded-full h-62 w-62 outline-3 outline-pink-400 object-fill lg:w-4/5 lg:h-fit xl:h-auto 2xl:h-fit"
             loading="lazy"
           />
         </div>
 
-        <div>
-          <p>Bonjour 🥰, bienvenue sur mon portfolio</p>
+        <div class="flex flex-col gap-8">
+          <p class="lg:text-2xl">Bonjour 🥰, bienvenue sur mon portfolio</p>
 
-          <h1 class="pt-4 text-4xl">
+          <h1 class="text-4xl">
             Je suis
             <span
               class="inline-block bg-linear-to-r from-purple-300 to-pink-400 bg-clip-text text-transparent title"
@@ -101,10 +103,12 @@
             Développeur Web & Web mobile
           </h1>
 
-          <p class="pt-5">
-            Développeuse débutante en formation et passionnée par le
-            développement web. Le respect et la durée d'un travail demandé font
-            partie de moi
+          <p class="lg:text-2xl">
+            Développeuse débutante en formation, je m'intéresse à la création
+            d'interfaces modernes, intuitives et accessibles. À travers mes
+            projets, je développe progressivement mes compétences en intégration
+            et en développement, tout en accordant une attention particulière
+            aux détails et à l'expérience utilisateur.
           </p>
         </div>
       </div>
@@ -151,12 +155,14 @@
             <img
               src="./Assets/Main-tof.webp"
               alt="photo dans la section à propos de moi"
-              class="rounded-4xl outline-1 outline-pink-400 md:h-110 md:w-200 lg:h-auto lg:"
+              class="rounded-4xl outline-1 outline-pink-400 md:h-110 md:w-200 lg:h-auto xl:w-7/8 2xl:w-3/4"
               loading="lazy"
             />
           </div>
 
-          <div class="flex flex-col gap-6 md:gap-4 lg:pt-28">
+          <div
+            class="flex flex-col gap-6 md:gap-4 lg:text-xl lg:gap-8 xl:text-2xl xl:pt-12 xl:w-7/8 2xl:w-6/7"
+          >
             <h3 class="under-title text-3xl font-semibold">
               Une développeuse passionnée par le code
             </h3>
@@ -164,7 +170,10 @@
             <p>
               Actuellement en formation Bac+2 en développement web à Garage404,
               j'ai eu l'opportunité d'y construire et développer l'ensemble de
-              mes compétences techniques. <br />
+              mes compétences techniques.
+            </p>
+
+            <p>
               Passionnée par le numérique depuis toujours, j'ai découvert le
               développement comme un moyen concret de transformer cette
               curiosité en création.
@@ -313,9 +322,9 @@
               class="w-full h-50 object-cover"
             ></video>
 
-            <div>
-              <div class="px-6 py-4">
-                <div class="title">Web Retro</div>
+            <div class="px-8">
+              <div class="flex flex-col gap-8">
+                <h2 class="title pt-8">Web Retro</h2>
 
                 <p class="text-gray-300/90">
                   WebRetro est une intégration web responsive réalisée avec
@@ -324,14 +333,12 @@
                   design
                 </p>
               </div>
-            </div>
 
-            <div class="lg:pt-24">
-              <div class="flex flex-row gap-4 px-4 py-12">
+              <div class="flex flex-row gap-4 py-12">
                 <a
                   href="https://web-retro.vercel.app/"
                   target="_blank"
-                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:py-0 2xl:py-4"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
                 >
                   <p>Visiter le projet</p>
                 </a>
@@ -365,38 +372,39 @@
               class="w-full h-50 object-cover"
             ></video>
 
-            <div class="px-6 py-4">
-              <div class="title">Mountain King</div>
+            <div class="px-8">
+              <div class="flex flex-col gap-8">
+                <h2 class="title pt-8">Mountain King</h2>
 
-              <p class="text-gray-300/90">
-                Mountain King est une intégration web responsive réalisée avec
-                Tailwind CSS. Ce projet met en avant un site professionnelle
-                d'un(e) jeune qui parle de son parcours. Il met en avant mes
-                compétences en HTML, Tailwind CSS, responsive design et un peu
-                de JavaScript
-              </p>
-            </div>
+                <p class="text-gray-300/90">
+                  Mountain King est un projet d'un site professionnel d'un(e)
+                  jeune qui parle de son parcours. Il met en avant mes
+                  compétences en HTML, Tailwind CSS, responsive design et un peu
+                  de JavaScript
+                </p>
+              </div>
 
-            <div class="flex flex-row gap-4 px-4 py-12">
-              <a
-                href="https://mountain-king.vercel.app/"
-                target="_blank"
-                class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:py-0 2xl:py-4"
-              >
-                <p>Visiter le projet</p>
-              </a>
-
-              <div>
+              <div class="flex flex-row gap-4 py-12">
                 <a
-                  href="https://github.com/anch365/mountain-king"
+                  href="https://mountain-king.vercel.app/"
                   target="_blank"
-                  class="h-12"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
                 >
-                  <img
-                    src="./icones/icons8-github-64.png"
-                    alt="logo de github pour voir le projet sur ce site"
-                  />
+                  <p>Visiter le projet</p>
                 </a>
+
+                <div>
+                  <a
+                    href="https://github.com/anch365/mountain-king"
+                    target="_blank"
+                    class="h-12"
+                  >
+                    <img
+                      src="./icones/icons8-github-64.png"
+                      alt="logo de github pour voir le projet sur ce site"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -414,38 +422,38 @@
               class="w-full h-50 object-cover"
             ></video>
 
-            <div class="px-6 py-4">
-              <div class="title">Drum Pad</div>
+            <div class="px-8">
+              <div class="flex flex-col gap-8">
+                <h2 class="title pt-8">Drum Pad</h2>
 
-              <p class="text-gray-300/90">
-                Ce projet m'a permis de bien mettre en évidence mes
-                connaissances en variables CSS et surtout sur JavaScript. Il a
-                comme fonction de pouvoir jouer la mélodie sans enrgistrer, mais
-                aussi enrgistrer les notes jouées pour que ça rejoue si on finit
-                l'enregistrement et qu'on clique sur le bouton play
-              </p>
-            </div>
+                <p class="text-gray-300/90">
+                  Ce projet m'a permis de bien mettre en évidence mes
+                  connaissances en variables CSS et surtout sur JavaScript. Il a
+                  comme fonction d'enregistrer le notes jouées et les rejouées.
+                </p>
+              </div>
 
-            <div class="flex flex-row gap-4 px-4 py-12">
-              <a
-                href="https://drum-pad-rho.vercel.app/"
-                target="_blank"
-                class="bg-linear-to-l from-purple-400 to-pink-400 text-black rounded-full px-8 py-4 md:px-12 xl:py-0 2xl:py-4"
-              >
-                Visiter le projet
-              </a>
-
-              <div>
+              <div class="flex flex-row gap-4 py-12">
                 <a
-                  href="https://github.com/anch365/drumPad"
+                  href="https://drum-pad-rho.vercel.app/"
                   target="_blank"
-                  class="h-12"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 text-black rounded-full px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
                 >
-                  <img
-                    src="./icones/icons8-github-64.png"
-                    alt="logo de github pour voir le projet sur ce site"
-                  />
+                  Visiter le projet
                 </a>
+
+                <div>
+                  <a
+                    href="https://github.com/anch365/drumPad"
+                    target="_blank"
+                    class="h-12"
+                  >
+                    <img
+                      src="./icones/icons8-github-64.png"
+                      alt="logo de github pour voir le projet sur ce site"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -504,15 +512,18 @@
         </div>
 
         <div class="flex flex-col gap-8 hover:text-gray-100">
-          <a href="mailto:anchouraabdoumchinda@gmail.com" class="flex flex-col gap-8">
-          <img
-            src="./icones/mail-star-svgrepo-com.svg"
-            alt="Logo de contact par Mail"
-            class="h-20 outline-3 rounded-full outline-gray-400/45 hover:outline-pink-400 ease-in-out delay-75 transition hover:scale-110"
-          />
+          <a
+            href="mailto:anchouraabdoumchinda@gmail.com"
+            class="flex flex-col gap-8"
+          >
+            <img
+              src="./icones/mail-star-svgrepo-com.svg"
+              alt="Logo de contact par Mail"
+              class="h-20 outline-3 rounded-full outline-gray-400/45 hover:outline-pink-400 ease-in-out delay-75 transition hover:scale-110"
+            />
 
-          <p>Email</p>
-        </a>
+            <p>Email</p>
+          </a>
         </div>
       </nav>
       <hr />

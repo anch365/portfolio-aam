@@ -24,6 +24,8 @@
   z-index: 1;
 }
 
-
+.link.active::after{
+  width: 100%;
+}
 
 
