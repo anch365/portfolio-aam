@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth bg-black/95 text-white">
+<html lang="en" lang="fr" class="scroll-smooth bg-black/95 text-white">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +27,7 @@
     class="flex flex-col px-8 py-32 gap-20 text-xl/8 under-title md:px-18 md:gap-28 lg:px-20 xl:gap-24 2xl:px-54 2xl:gap-40"
   >
     <header
-      class="fixed rounded-4xl top-4 left-4 right-4 flex flex-row justify-between p-4 bg-black/45 md:left-20 md:right-20 lg:right-42 lg:left-42"
+      class="fixed rounded-4xl top-4 left-4 right-4 flex flex-row justify-between items-center p-4 bg-black/45 md:left-20 md:right-20 lg:right-42 lg:left-42"
     >
       <!-- LE LOGO DU PORTFOLIO -->
       <a href="#home">
@@ -36,6 +36,7 @@
           alt="logo du portfolio"
           class="h-9 xl:h-12"
           loading="lazy"
+          aria-label="Le logo du portfolio qui ramène à la page d'accueil"
         />
       </a>
 
@@ -46,16 +47,16 @@
           class="fixed top-0 left-0 right-0 bottom-0 bg-gray-900/30 hidden"
         ></div>
 
-        <div
+        <nav
           id="fenetre"
-          class="hidden fixed flex-col gap-10 bg-gray-800 left-44 top-16 right-8 rounded-2xl py-8 items-center md:right-25"
+          class="hidden fixed flex-col gap-10 bg-gray-800 left-44 top-16 right-8 rounded-2xl py-8 items-center md:right-25 md:left-95 md:bottom-80"
         >
           <a href="#home">Home</a>
           <a href="#aboutMe">About me</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-        </div>
+        </nav>
 
         <img
           id="menuB"
@@ -66,7 +67,7 @@
       </div>
 
       <!-- MENU DESKTOP -->
-      <div
+      <nav
         class="hidden fixed text-gray-300/90 right-48 flex-row lg:flex lg:gap-8"
       >
         <a href="#home">Home</a>
@@ -74,12 +75,15 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </div>
+      </nav>
     </header>
 
-    <main id="home" class="flex flex-col items-center gap-28 md:gap-24 lg:gap-20">
+    <main
+      id="home"
+      class="flex flex-col items-center gap-28 md:gap-24 lg:gap-20"
+    >
       <!-- Home -->
-      <div
+      <section
         class="flex flex-col gap-8 justify-center items-center lg:flex-row lg:gap-8"
       >
         <div>
@@ -98,7 +102,7 @@
             Je suis
             <span
               class="inline-block bg-linear-to-r from-purple-300 to-pink-400 bg-clip-text text-transparent title"
-              >Anchoura Abdou mchinda</span
+              >Anchoura Abdou Mchinda</span
             >
             Développeur Web & Web mobile
           </h1>
@@ -111,23 +115,22 @@
             aux détails et à l'expérience utilisateur.
           </p>
         </div>
-      </div>
+      </section>
+      
       <!-- BOUTONS -->
       <nav class="flex flex-col gap-4 justify-center md:flex-row">
-        <a href="#projects"
-          ><button
-            class="rounded-full bg-pink-400 text-black px-6 py-2 hover:bg-pink-400/74 md:px-20 lg:px-17"
-          >
-            Voir mes projets
-          </button>
+        <a
+          href="#projects"
+          class="rounded-full bg-pink-400 text-black px-6 py-2 hover:bg-pink-400/74 md:px-20 lg:px-17"
+        >
+          Voir mes projets
         </a>
 
-        <a href="#contact">
-          <button
-            class="rounded-full outline-2 outline-purple-400 text-purple-400 px-9 py-2 hover:bg-gray-600/35 md:px-20"
-          >
-            Me contacter
-          </button>
+        <a
+          href="#contact"
+          class="rounded-full outline-2 outline-purple-400 text-purple-400 px-9 py-2 hover:bg-gray-600/35 md:px-20"
+        >
+          Me contacter
         </a>
       </nav>
 
@@ -154,7 +157,7 @@
           <div>
             <img
               src="./Assets/Main-tof.webp"
-              alt="photo dans la section à propos de moi"
+              alt="photo de moi dans la section à propos de moi"
               class="rounded-4xl outline-1 outline-pink-400 md:h-110 md:w-200 lg:h-auto xl:w-7/8 2xl:w-3/4"
               loading="lazy"
             />
@@ -338,7 +341,7 @@
                 <a
                   href="https://web-retro.vercel.app/"
                   target="_blank"
-                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full hover:bg-linear-to-l hover:from-purple-400/80 hover:to-pink-400/80 text-black px-8 py-4 md:px-12 xl:pt-4 2xl:py-4" aria-label="Visiter le projet web retro dans le site vercel"
                 >
                   <p>Visiter le projet</p>
                 </a>
@@ -352,6 +355,8 @@
                     <img
                       src="./icones/icons8-github-64.png"
                       alt="logo de github pour voir le projet sur ce site"
+                      class="ease-in-out delay-75 transition hover:scale-110"
+                      aria-label="Voir le projet web retro dans mon compte git hub"
                     />
                   </a>
                 </div>
@@ -388,7 +393,8 @@
                 <a
                   href="https://mountain-king.vercel.app/"
                   target="_blank"
-                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full text-black px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 rounded-full hover:bg-linear-to-l hover:from-purple-400/80 hover:to-pink-400/80 text-black px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
+                  aria-label="Visiter le projet mountain king dans le site vercel"
                 >
                   <p>Visiter le projet</p>
                 </a>
@@ -402,6 +408,8 @@
                     <img
                       src="./icones/icons8-github-64.png"
                       alt="logo de github pour voir le projet sur ce site"
+                      class="ease-in-out delay-75 transition hover:scale-110"
+                       aria-label="Voir le projet mountain king dans mon compte git hub"
                     />
                   </a>
                 </div>
@@ -437,7 +445,8 @@
                 <a
                   href="https://drum-pad-rho.vercel.app/"
                   target="_blank"
-                  class="bg-linear-to-l from-purple-400 to-pink-400 text-black rounded-full px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
+                  class="bg-linear-to-l from-purple-400 to-pink-400 hover:bg-linear-to-l hover:from-purple-400/80 hover:to-pink-400/80 text-black rounded-full px-8 py-4 md:px-12 xl:pt-4 2xl:py-4"
+                  aria-label="Visiter le projet Drum Pad dans le site vercel"
                 >
                   Visiter le projet
                 </a>
@@ -451,7 +460,9 @@
                     <img
                       src="./icones/icons8-github-64.png"
                       alt="logo de github pour voir le projet sur ce site"
-                    />
+                      class="ease-in-out delay-75 transition hover:scale-110"
+                       aria-label="Voir le projet Drum Pad dans mon compte git hub"
+                      />
                   </a>
                 </div>
               </div>
@@ -486,15 +497,19 @@
 
       <nav class="flex flex-wrap gap-12 justify-center">
         <div class="flex flex-col gap-8 hover:text-gray-100">
-          <a href="https://www.linkedin.com/in/abdou-mchinda-anchoura-445315406/" target="_blank" class="flex flex-col gap-8">
-          <img
-            src="./icones/linkedin-svgrepo-com (1).svg"
-            alt="Logo de contact sur Linkedin"
-            class="h-20 outline-3 rounded-full outline-gray-400/45 hover:outline-blue-500 ease-in-out delay-75 transition hover:scale-110"
-          />
+          <a
+            href="https://www.linkedin.com/in/abdou-mchinda-anchoura-445315406/"
+            target="_blank"
+            class="flex flex-col gap-8"
+          >
+            <img
+              src="./icones/linkedin-svgrepo-com (1).svg"
+              alt="Logo de contact sur Linkedin"
+              class="h-20 outline-3 rounded-full outline-gray-400/45 hover:outline-blue-500 ease-in-out delay-75 transition hover:scale-110"
+            />
 
-          <p>LinkedIn</p>
-        </a>
+            <p>LinkedIn</p>
+          </a>
         </div>
 
         <div class="hover:text-gray-100">
