@@ -342,6 +342,9 @@
   .scroll-smooth {
     scroll-behavior: smooth;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -402,6 +405,12 @@
   }
   .bg-pink-400 {
     background-color: var(--color-pink-400);
+  }
+  .bg-pink-400\/35 {
+    background-color: color-mix(in srgb, oklch(71.8% 0.202 349.761) 35%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-pink-400) 35%, transparent);
+    }
   }
   .bg-linear-to-l {
     --tw-gradient-position: to left;
